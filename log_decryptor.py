@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
 import os                  # for handling paths
 import sys                 # for getting sys.argv and reading multiple line user input
 import time
@@ -83,9 +80,9 @@ with open(encrypted_log_filename, "rb") as f:
 
 # save decrypted log:
 new_filename = ".".join(encrypted_log_filename.split(".")[:-1]) + "_decrypted.txt"
-with open(new_filename, "w") as f:
+with open(new_filename, "w", encoding='utf-8') as f:  # Specify UTF-8 encoding
     f.write(decrypted_log)
-del decrypted_log
+
 
 erase = input('Finished! Saved to ' + new_filename + '. \nClear the console output? (y / n)')
 if erase.lower() == 'y':

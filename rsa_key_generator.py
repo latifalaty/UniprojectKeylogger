@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
 import os                  # for handling paths
 import sys                 # for getting sys.argv
 from Cryptodome.PublicKey import RSA

